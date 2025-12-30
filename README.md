@@ -28,5 +28,15 @@ them with cryptographic hash values for integrity verification.
 - Logging module
 
 ---
+## How It Works
+1. The system monitors a predefined directory.
+2. Any file creation, modification, or deletion is detected.
+3. Hash values are calculated to ensure file integrity.
+4. All events are logged for audit and analysis.
 
-## Project Structure
+---
+
+## How to Run
+```bash
+pip install watchdog
+python file_monitor.py
